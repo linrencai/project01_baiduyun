@@ -1,0 +1,516 @@
+/* #lrc_header{
+    height: 61px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 10000000;
+}
+.footer{
+    height: 412px;
+    background-color: #000;
+} */
+/* banner开始 */
+#lrc_content{
+    margin-top:60px;
+    position: relative;
+}
+#lrc_banner{
+    height: 450px;
+    background:url(../img/banner-1.jpg) no-repeat 50%;
+    background: cover;
+    position: relative;
+}
+.lrc_banner_shape{
+    height: 450px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+}
+.lrc_bannerText{
+    
+    position: absolute;
+    left: 50%;
+    margin-left: -275px;
+    top: 50%;
+    margin-top: -110px;
+    
+}
+.lrc_textTitle{
+    letter-spacing: 5px;
+    color: #fff;
+    width: 550px;
+    font-size: 48px;
+    text-align: center;
+}
+.lrc_textContent{
+    color: #fff;
+    width: 550px;
+    text-align: center;
+    margin:20px 0;
+    line-height: 28px;
+      
+}
+.lrc_textSwhz{
+    width: 550px;
+    text-align: center;
+}
+.lrc_swhz{
+    margin: 0 auto;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    width: 118px;
+    color: #fff;
+    border: 1px solid #fff;
+    
+}
+.lrc_swhz:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 1s ease;
+}
+/* 功能介绍开始 */
+.lrc_productIntroduce{
+    padding-top: 60px;
+}
+.lrc_p_c_banner{
+    position: relative;
+    height: 450px;
+    background: url(../img/intro-bg.jpg);
+}
+.lrc_p_title{
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+.lrc_p_info{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 45px;
+}
+.lrc_p_c_bannerBox1,
+.lrc_p_c_bannerBox2,
+.lrc_p_c_bannerBox3{
+    width: 300px;
+    height: 400px;
+    margin: 0 45px;
+    margin-top: 25px;
+    /* background-color: #999;
+    opacity: 0.2; */
+    
+}
+.lrc_box1_photo{
+    width: 180px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-image: url(../img/intro-case-1-1.png);
+    background-size: 100% 100%;
+}
+.lrc_box1_textTitle{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.lrc_box1_textContent{
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+}
+.lrc_p_c_bannerBox2 .lrc_box1_photo{
+background-image: url(../img/intro-case-2-1.png);
+}
+.lrc_p_c_bannerBox3 .lrc_box1_photo{
+    background-image: url(../img/intro-case-3-1.png);
+    
+}
+.lrc_p_c_bannerBox1::after{
+    content: '';
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    left: 380px;
+    bottom: 270px;
+    background: url(../img/arrow.png);
+    background-size: contain;
+}
+.lrc_p_c_bannerBox2::after{
+    content: '';
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    left: 780px;
+    bottom: 270px;
+    background: url(../img/arrow.png);
+    background-size: contain;
+}
+.lrc_p_c_bottom{
+    width: 590px;
+    height: 128px;
+    background-color: #fff;
+    padding: 30px 50px;
+    
+    box-sizing: border-box;
+}
+.lrc_p_c_bottom p{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.lrc_bottomText{
+    font-size: 14px;
+    color: #666;
+
+}
+/* 功能演示区域 */
+.lrc_show{
+    padding-top: 80px;
+}
+.lrc_showVideo1{
+    
+    height: 430px;
+}
+.lrc_videoPlayer_left,
+.lrc_videoPlayer_right{
+    width: 50%;
+    height: 430px;
+    box-sizing: border-box;
+    position: relative;
+}
+.lrc_small_videoPhoto{
+    width: 25%;
+    height: 160px;
+    background-color: #fff; 
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.lrc_videoPlayer_right{
+    position: relative;
+    border: 1px solid #ebebeb;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+.lrc_videoPlayer_left p{
+    background-color: #262626;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.lrc_video1{
+    width: 590px;
+    height: 390px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #000;
+}
+.lrc_showPhoto{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.lrc_dongtaiBtn,
+.lrc_jingtaiBtn{
+    background: #e1ecf8;
+    color: #2268f3;
+    
+}
+#lrc_video2{
+
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    display: none;
+    
+}
+#lrc_video2.active{
+    display: block;
+}
+.lrc_sp_img{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    display: none;
+}
+.lrc_blueBorder{
+    border: 1px solid #6394f2;
+}
+.lrc_small_videoPhoto img{
+    width: 100%;
+    height: 100%;
+
+}
+.lrc_showVideo2{
+    position: relative;
+}
+.lrc_imgbg{
+    width: 283px;
+    height: 148px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+.lrc_imgbg::after{
+    content: "";
+    width: 30px;
+    height:30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    background: url(../img/video-arrow.png) no-repeat 6px 0;
+    background-size: 50px 30px;
+    
+}
+.lrc_small_videoPhoto:hover .lrc_imgbg::after{
+    transition: all 0.3s ease;
+    background: url(../img/video-arrow.png) no-repeat -25px 0;
+    background-size: 50px 30px;
+
+}
+/* 应用场景区域 */
+.lrc_scenario{
+    padding-top: 70px;
+}
+.lrc_scenario_left,
+.lrc_scenario_right{
+    width: 572px;
+    height: 218px;
+    background-color: #fff;
+    padding: 30px 30px 0 30px;
+    box-sizing: border-box;
+}
+.lrc_scenario_p1{
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #333;
+}
+.lrc_scenario_p2{
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 26px;
+    color: #999;
+
+}
+.lrc_scenario hr{
+    background-color: #eee;
+    height: 1px;
+    border: 0;
+}
+
+.lrc_tiebaIcon{
+    background: url(../img/tieba_339abd0c.png) no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 0 10px;
+    
+}
+.lrc_scenario_leftIcon{
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    margin-top: 20px;
+}
+.lrc_baiduIcon{
+    background: url(../img/way1_10b7d45c.png) no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    display:inline-block;
+    
+    vertical-align: middle;
+    margin: 0 10px;
+ }
+ /* 技术特色 */
+.lrc_tecFeatures{
+    margin-top: 70px;
+    background-color: #fff;
+}
+.lrc_tecFeatures_title{
+    padding-top: 80px;
+}
+.lrc_tecFeatrues_content{
+    height: 268px;
+    /* border: 1px solid #ccc; */
+}
+.lrc_tc1{
+    margin-left: 70px;
+    margin-right: 70px;
+    /* margin: 0 auto; */
+    width: 250px;
+    height: 100%;
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+}
+.lrc_tc_icon1{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon3.png) no-repeat;
+    background-size: contain;
+}
+.lrc_tc1 p:nth-child(3){
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    line-height: 25px;
+}
+.lrc_tc1 p:nth-child(2){
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+
+}
+.lrc_tc_icon2{
+    background: url(../img/icon1.png);
+    background-size: contain;
+}
+.lrc_tc_icon3{
+    background: url(../img/icon5.png);
+    background-size: contain;
+}
+/* 产品与服务区域 */
+.lrc_p_service{
+    padding-top: 80px;
+    text-align: center;
+    background-color: #fff;
+}
+.lrc_ps_title{
+   margin-bottom: 30px;
+}
+.lrc_ps_Content{
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #999;
+}
+.lrc_ps_img{
+    width: 694px;
+    height: 206px;
+    background: url(../img/product.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+/* 快速与我们取得联系区域 */
+.lrc_contantUs{
+    padding-bottom: 30px;
+    padding-top: 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+}
+.lrc_cu_title{
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+.lrc_cu_content{
+    height: 30px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin: 30px auto;
+}
+.lrc_cu_swhz{
+     width: 100%;
+    height: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.lrc_cu_swhz a{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 16px 70px;
+    background-color: #006fef;
+    color: #fff;
+}
+/* 控制消失和现实类名 */
+.active{
+    display: block;
+}
+/* 点击动态和静态切换的按钮 */
+.lrc_btnClick_color{
+    background-color:#2268f3;
+    color:#fff;
+}
+.lrc_btnClickOff_color{
+    background: #e1ecf8;
+    color: #2268f3;
+}
+/* 新增侧边floor导航 */
+.lrc_rightNav{
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    display: none;
+}
+.lrc_rightNav li{
+    text-align: center;
+    color: #fff;
+    background-color: #006fef;
+    opacity: 0.5;
+    line-height: 20px;
+    font-size: 12px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    /* display: none; */
+}
+
+.lrc_rightNav li:hover{
+    opacity: 1;
+    /* transform: rotateX(360deg); */
+    transition: all 0.5s linear;
+}
+.lrc_rightNav li.lrc_current{
+    opacity: 1;
+}
+/* .lrc_rightNav li+li{ */
+    /* margin-top: 5px; */
+/* } */
+.lrc_backTop{
+    margin-top: 250px;
+    text-align: center;
+    color: #006fef;
+    opacity: 0.5;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.lrc_backTop:hover{
+    opacity: 1;
+    transform: rotateY(180deg);
+    transition: all 0.3s linear;
+}

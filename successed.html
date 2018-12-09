@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/fi_aa997970.ico">
+    <title>视频封面选图-百度AI 申请成功</title>
+    <style>
+    .lrc_successed{
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    width: 530px;
+    margin: 30px auto;
+    /* display: none; */
+}
+.lrc_successed.active{
+    display: none;
+}
+.lrc_successedText{
+    margin-bottom: 20px;
+}
+.lrc_backToIndex{
+    width: 100px;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #108cee;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.lrc_backToIndex:hover{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.lrc_companyNameShow{
+    color: #f05050;
+    font-size: 22px;
+}
+    </style>
+</head>
+<body>
+    <!-- 提交成功之后的页面 -->
+    <div class="lrc_successed">
+            
+            <div class="lrc_successedText">您好！
+            <div class="lrc_companyNameShow">您</div>使用申请已成功提交，审核通过后会有专人与您联系！感谢您对我们产品的关注！</div>
+            <a href="./lrc_product_video_vcs.html" class="lrc_backToIndex">返回首页</a>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script>
+    var v = localStorage['cpName'];
+    
+    $('.lrc_companyNameShow').text(v);
+    </script>
+</body>
+</html>

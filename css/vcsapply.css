@@ -1,0 +1,192 @@
+body{
+    background-color: #fff;
+}
+
+.lrc_header{
+    height: 61px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.footer{
+    height: 412px;
+    background-color: #000;
+}
+.lrc_applyMain{
+    padding-top: 20px;
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+}
+.lrc_apply{
+    margin: 0 auto;
+   margin-bottom: 50px;
+   border: 1px solid #dee5e7;
+   border-radius: 3px;
+    /* width: 1180px; */
+}
+.lrc_apply_content{
+    /* margin-bottom: 50px; */
+    text-align: center;
+}
+.lrc_appinfo{
+    margin: 30px auto;
+}
+.lrc_apply_title{
+    font-weight: 400;
+    line-height: 38px;
+    padding-left: 10px;
+    background-color: #f6f8f8;
+    border-bottom: 1px solid #edf1f2;
+    border-radius: 3px 3px 0 0;
+}
+.lrc_apptips{
+    padding-left: 10px;
+    color: #999;
+}
+.lrc_sltTitle{
+    text-align: right;
+    width: 350px;
+}
+.lrc_sltTitle span{
+    color: #f05050;
+}
+.lrc_company{
+    margin-bottom: 30px;
+}
+.lrc_select{
+
+    text-align: left;
+}
+.lrc_selectL1{
+    padding-left: 30px;
+}
+.lrc_selectL2{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* .lrc_cp_other{
+ padding-left: 320px;
+
+} */
+#lrc_text1{
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 30px;
+    margin-left: 6px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#lrc_text1:focus{
+    border-color: #50cbec;
+}
+/* .lrc_videoTime{
+    padding-left: 270px;
+} */
+/* .lrc_cp_name{
+    padding-left: 20px;
+} */
+.lrc_reason{
+    border: 1px solid #ccc;
+    height: 100px;
+    width: 600px;
+
+}
+
+.lrc_reason:focus{
+    border-color: #50cbec;
+}
+/* .lrc_cp_intreduce{
+    padding-left: 320px;
+}
+.lrc_apply_reason{
+    padding-left: 320px;
+} */
+textarea{
+    border-color: #50cbec;
+    resize: none;
+}
+.lrc_tips{
+    font-size: 14px;
+    color: #999;
+}
+.lrc_tijiao{
+    border-top: 1px solid #dee5e7;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 55px;
+    background-color:#fefefe;
+}
+.lrc_tjBtn{
+    
+    color: #fff;
+    display: block;
+    background-color: #108cee;
+    opacity: 0.8;
+    line-height: 30px;
+    width: 100px;
+    height: 34px;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-color: #108cee;
+}
+.lrc_tjBtn:hover{
+    
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+/* //提交之后的页面 */
+
+
+.active{
+    display: block;
+}
+.lrc_successed{
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    width: 530px;
+    margin: 30px auto;
+    display: none;
+}
+.lrc_successed.active{
+    display: none;
+}
+.lrc_successedText{
+    margin-bottom: 20px;
+}
+.lrc_backToIndex{
+    width: 100px;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #108cee;
+    opacity: 0.8;
+}
+.lrc_backToIndex:hover{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.lrc_companyNameShow{
+    color: #f05050;
+    font-size: 22px;
+}
+
+
+/* 页面加载完成后的动画 */
+.lrc_load{
+    width: 60px;
+    height: 60px;
+    margin: 50px auto;
+    display: none;
+}
+.lrc_select span{
+    color: red;
+    font-size: 12px;
+    /* display: none; */
+}
